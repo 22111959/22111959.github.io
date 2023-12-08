@@ -17,12 +17,22 @@ margin-left:auto;}
 h1 {color:#44763E;}
 p  {color:#161716;}
 </style>
+<script>
 
+/*Random background color- by javascriptkit.com
+Visit JavaScript Kit (http://javascriptkit.com) for script
+Credit must stay intact for use*/
+
+//Enter list of bgcolors:
+var bgcolorlist=new Array("#DFDFFF", "#FFFFBF", "#80FF80", "#EAEAFF", "#C9FFA8", "#F7F7F7", "#FFFFFF", "#DDDD00")
+
+document.body.style.background=bgcolorlist[Math.floor(Math.random()*bgcolorlist.length)]
+</script>
 <body>
 
 <p>
 <a href="index.htm">Home</a> :
-<a href="MobileWorldStation">What is Mobile World Station?</a>
+<a href="MobileWorldStation.htm">What is Mobile World Station?</a> :
 <a href="PhonesPage.htm">All our Phones</a> :
 <a href="Sim-OnlyPage.htm">Sim-Only Phones</a> :
 <a href="Sim-freePage.htm">Sim-Free Phones</a> :
