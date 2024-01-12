@@ -40,71 +40,46 @@ document.body.style.background=bgcolorlist[Math.floor(Math.random()*bgcolorlist.
 <a href="OffersPage.htm">Offers</a> :
 <a href="AboutUsPage.htm">About Us</a> :
 </p>
+<p>please help us improve our website by filling in the form below:</p>
 
-<div id="content" class="site-content">
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+</form>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main">
-
-			
-<article id="post-7" class="post-7 page type-page status-publish hentry entry">
-
-	<header class="entry-header responsive-max-width">
-		
-<h1 class="entry-title">Contact</h1>
-	</header>
-
+<form>
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email">
+</form>
 	
-	<div class="entry-content">
-		
-<p class="has-text-align-left"><span class="has-inline-color has-secondary-color">Don’t hesitate to reach out with the contact information below, or send a message using the form.</span></p>
+<SCRIPT language=JavaScript>
+<!--
 
-<div style="height:32px;" aria-hidden="true" class="wp-block-spacer desktop-only"></div>
+//Accept terms & conditions script (by InsightEye www.insighteye.com)
+//Visit JavaScript Kit (http://javascriptkit.com) for this script & more.
 
-<div class="wp-block-columns alignwide has-2-columns is-layout-flex wp-container-core-columns-layout-1 wp-block-columns-is-layout-flex">
-<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-<h2 class="has-text-align-left wp-block-heading">Get in Touch</h2>
+function checkCheckBox(f){
+if (f.agree.checked == false )
+{
+alert('Please check the box to continue.');
+return false;
+}else
+return true;
+}
+//-->
+</SCRIPT>
 
+<form action="/yourscript.cgi-or-your-page.html" method="POST" onsubmit="return checkCheckBox(this)">
 
-<div class="wp-block-jetpack-phone"><span itemprop="telephone"><a href="tel:07574500861">07574500861</a></span></div>
-</div>
+<!--Enter your form contents here-->
 
-
-<div data-test="contact-form" id="contact-form-7" class="wp-block-jetpack-contact-form-container " style="--jetpack--contact-form--primary-color: rgb(12, 128, 161); --jetpack--contact-form--background-color: rgb(68, 68, 68); --jetpack--contact-form--text-color: rgb(0, 0, 0); --jetpack--contact-form--border: 1px solid rgb(234, 234, 234); --jetpack--contact-form--border-color: rgb(234, 234, 234); --jetpack--contact-form--border-size: 1px; --jetpack--contact-form--border-style: solid; --jetpack--contact-form--border-radius: 4px; --jetpack--contact-form--input-background: rgb(255, 255, 255); --jetpack--contact-form--input-background-fallback: rgb(255, 255, 255); --jetpack--contact-form--input-padding: 8px; --jetpack--contact-form--input-padding-top: 8px; --jetpack--contact-form--input-padding-left: 8px; --jetpack--contact-form--font-size: 18px; --jetpack--contact-form--font-family: &quot;PT Sans&quot;, Arial, sans-serif; --jetpack--contact-form--line-height: 20.7px; --jetpack--contact-form--button-primary--color: rgb(255, 255, 255); --jetpack--contact-form--button-primary--background-color: rgb(12, 128, 161); --jetpack--contact-form--button-primary--border: 0px none rgb(255, 255, 255); --jetpack--contact-form--button-primary--border-color: rgb(255, 255, 255); --jetpack--contact-form--button-outline--padding: 10.005px 19.9949px; --jetpack--contact-form--button-outline--border: 2px solid rgb(12, 128, 161); --jetpack--contact-form--button-outline--background-color: rgba(0, 0, 0, 0); --jetpack--contact-form--button-outline--background-color-fallback: rgb(255, 255, 255); --jetpack--contact-form--button-outline--border-size: 2px; --jetpack--contact-form--button-outline--border-radius: 4px; --jetpack--contact-form--button-outline--text-color: rgb(12, 128, 161); --jetpack--contact-form--button-outline--line-height: 14.9999px;">
-
-
-
-<div style="" class="grunion-field-name-wrap grunion-field-wrap">
-<label for="g7-name" class="grunion-field-label name">Name<span class="grunion-label-required" aria-hidden="true">(required)</span></label>
-<input type="text" name="g7-name" id="g7-name" value="" class="name  grunion-field" required="" aria-required="true">
-	</div>
-
-
-<div style="" class="grunion-field-email-wrap grunion-field-wrap">
-<label for="g7-email" class="grunion-field-label email">Email<span class="grunion-label-required" aria-hidden="true">(required)</span></label>
-<input type="email" name="g7-email" id="g7-email" value="" class="email  grunion-field" required="" aria-required="true">
-	</div>
-
-
-
-<div style="" class="grunion-field-url-wrap grunion-field-wrap">
-<label for="g7-website" class="grunion-field-label url">Website<span class="grunion-label-required" aria-hidden="true">(required)</span></label>
-<input type="text" name="g7-website" id="g7-website" value="" class="url  grunion-field" required="" aria-required="true" title="Please enter a valid URL - https://www.example.com" oninvalid="setCustomValidity(&quot;Please enter a valid URL - https://www.example.com&quot;)" oninput="setCustomValidity(&quot;&quot;)" pattern="(([:\/a-zA-Z0-9_\-]+)?(\.[a-zA-Z0-9_\-\/]+)+)" data-type-override="url">
-	</div>
-
-
-
-<div style="" class="grunion-field-textarea-wrap grunion-field-wrap">
-<label for="contact-form-comment-g7-message" class="grunion-field-label textarea">Message<span class="grunion-label-required" aria-hidden="true">(required)</span></label>
-<textarea style="" name="g7-message" id="contact-form-comment-g7-message" rows="20" class="textarea  grunion-field" required="" aria-required="true"></textarea>
-	</div>
-
-		<button type="submit" class="pushbutton-wide">Submit</button>
-
-
-
-		</script>
-	
+<b>By submitting, I agree that all info entered was done accurately & truthfully.</b><br />
+I accept: <input type="checkbox" value="0" name="agree">
+<input type="submit" value="Submit form">
+<input type="button" value="Exit" onclick="document.location.href='/index.html';">
+</form>
 
 </body>
 </html>
