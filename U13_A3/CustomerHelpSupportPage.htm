@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<head>
+<title>Customer help & Support</title>
+</head>
+<body>
+
+<img src="images/Website_Banner_1.png" alt="Mobile world Station logo">
+
+<style>
+body{font-family:Arial,Helvetica,sans-serif;
+background-color:#fbfbfb;
+width:900px;
+margin-right:auto;
+margin-left:auto;}
+h1 {color:#44763E;}
+p  {color:#161716;}
+</style>
+<script>
+
+/*Random background color- by javascriptkit.com
+Visit JavaScript Kit (http://javascriptkit.com) for script
+Credit must stay intact for use*/
+
+//Enter list of bgcolors:
+var bgcolorlist=new Array("#DFDFFF", "#FFFFBF", "#80FF80", "#EAEAFF", "#C9FFA8", "#F7F7F7", "#FFFFFF", "#DDDD00")
+
+document.body.style.background=bgcolorlist[Math.floor(Math.random()*bgcolorlist.length)]
+</script>
+<body>
+
+<p>
+<a href="index.htm">Home</a> :
+<a href="MobileWorldStation.htm">What is Mobile World Station?</a>
+<a href="PhonesPage.htm">All our Phones</a> :
+<a href="Sim-OnlyPage.htm">Sim-Only Phones</a> :
+<a href="Sim-freePage.htm">Sim-Free Phones</a> :
+<a href="CustomerHelpSupportPage.htm">Customer Help & Supporrt</a> :
+<a href="OffersPage.htm">Offers</a> :
+<a href="AboutUsPage.htm">About Us</a> :
+</p>
+<p>please help us improve our website by filling in the form below:</p>
+
+<form action="mailto:22111959@cambria.ac.uk" method="POST" onsubmit="return checkCheckBox(this)">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email">
+
+	
+<SCRIPT language=JavaScript>
+<!--
+
+//Accept terms & conditions script (by InsightEye www.insighteye.com)
+//Visit JavaScript Kit (http://javascriptkit.com) for this script & more.
+
+function checkCheckBox(f){
+if (f.agree.checked == false )
+{
+alert('Please check the box to continue.');
+return false;
+}else
+return true;
+}
+//-->
+</SCRIPT>
+
+
+
+<!--Enter your form contents here-->
+
+<b>By submitting, I agree that all info entered was done accurately & truthfully.</b><br />
+I accept: <input type="checkbox" value="0" name="agree">
+<input type="submit" value="Submit form">
+<input type="button" value="Exit" onclick="document.location.href='/index.html';">
+</form>
+<p>Help with Samsung phones can be found in the <a href="https://eu.community.samsung.com/t5/english/ct-p/uk?page=1&tab=setting:samsung.featured_topics" target="_blank">Samsung Community Forum</a>
+</body>
+</html>
+
+
