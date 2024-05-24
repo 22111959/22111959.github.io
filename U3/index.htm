@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<head>
+<title>Homepage</title>
+</head>
+<body>
+
+<img src="images/PersonImage.jpg" alt="This is Me">
+
+<style>
+
+body{font-family:Arial,Helvetica,sans-serif;
+background-color:#fbfbfb;
+width:900px;
+margin-right:auto;
+margin-left:auto;}
+h1 {color:#44763E;}
+p {color:#161716;}
+</style>
+
+<script>
+
+/*Random background color- by javascriptkit.com
+Visit JavaScript Kit (http://javascriptkit.com) for script
+Credit must stay intact for use*/
+
+//Enter list of bgcolors:
+var bgcolorlist=new Array("#DFDFFF", "#FFFFBF", "#80FF80", "#EAEAFF", "#C9FFA8", "#F7F7F7", "#FFFFFF", "#DDDD00")
+
+document.body.style.background=bgcolorlist[Math.floor(Math.random()*bgcolorlist.length)]
+</script>
+<p>
+<a href="index.htm">Homepage</a> :
+<a href="Unit1.htm">Unit 1</a> :
+<a href="Unit2.htm">Unit 2</a> :
+<a href="Unit8.htm">Unit 8</a> :
+<a href="Unit13.htm">Unit 13</a> : 
+<a href="Unit14.htm">Unit 14</a> :
+<a href="Aboutme.htm">About Me</a> :
+
+</p>
+
+
+<script>
+
+var mydate=new Date()
+var year=mydate.getYear()
+if (year < 1000)
+year+=1900
+var day=mydate.getDay()
+var month=mydate.getMonth()
+var daym=mydate.getDate()
+if (daym<10)
+daym="0"+daym
+var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
+document.write("<small><font color='000000' face='Arial'><b>"+dayarray[day]+", "+montharray[month]+" "+daym+", "+year+"</b></font></small>")
+
+</script>
+
+<table border="0" width="200" cellspacing="0" cellpadding="3">
+<form name="where">
+  <tr>
+   
+
+</td>
+  </tr>
+  <tr>
+<script language="JavaScript">
+
+/*
+Drop Down World Clock- By JavaScript Kit (http://www.javascriptkit.com)
+Portions of code by Kurt @ http://www.btinternet.com/~kurt.grigg/javascript
+This credit notice must stay intact
+*/
+
+if (document.all||document.getElementById)
+document.write('<span id="worldclock" style="font:bold 16px Arial;"></span><br />')
+
+zone=0;
+isitlocal=true;
+ampm='';
+
+function updateclock(z){
+zone=z.options[z.selectedIndex].value;
+isitlocal=(z.options[0].selected)?true:false;
+}
+
+function WorldClock(){
+now=new Date();
+ofst=now.getTimezoneOffset()/60;
+secs=now.getSeconds();
+sec=-1.57+Math.PI*secs/30;
+mins=now.getMinutes();
+min=-1.57+Math.PI*mins/30;
+hr=(isitlocal)?now.getHours():(now.getHours() + parseInt(ofst)) + parseInt(zone);
+hrs=-1.575+Math.PI*hr/6+Math.PI*parseInt(now.getMinutes())/360;
+if (hr < 0) hr+=24;
+if (hr > 23) hr-=24;
+ampm = (hr > 11)?"PM":"AM";
+statusampm = ampm.toLowerCase();
+
+hr2 = hr;
+if (hr2 == 0) hr2=12;
+(hr2 < 13)?hr2:hr2 %= 12;
+if (hr2<10) hr2="0"+hr2
+
+var finaltime=hr2+':'+((mins < 10)?"0"+mins:mins)+':'+((secs < 10)?"0"+secs:secs)+' '+statusampm;
+
+if (document.all)
+worldclock.innerHTML=finaltime
+else if (document.getElementById)
+document.getElementById("worldclock").innerHTML=finaltime
+else if (document.layers){
+document.worldclockns.document.worldclockns2.document.write(finaltime)
+document.worldclockns.document.worldclockns2.document.close()
+}
+
+
+setTimeout('WorldClock()',1000);
+}
+
+window.onload=WorldClock
+//-->
+</script>
+
+<h1>Welcome to my portfolio website</h1>
+
+<p>I am going to take you through all of the units I have covered whilst in this information technology course over the past 9 months. Please read through all of my pages and I hope you enjoy rerading through some of my work in this course</p>
+
+
+<img src="images/ColegCambrialogo.jpg"
+
+</html>
